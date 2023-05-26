@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/4da79f6fd1.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="header">
+        <div class="container">
+            <nav>
+                <img class="logoimg" src="logo.jpg" alt="">
+                <ul id="sidemenu">
+                    <li><a href="#header">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#services">Services</a></li>
+                    <li><a href="#portfolio">Portfolio</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                    <i class="fa-solid fa-circle-xmark" onclick="closemenu()"></i>
+                </ul>
+                <i class="fa-solid fa-bars" onclick="openmenu()"></i>
+            </nav>
+            <div class="header-text">
+                <p>Web Developer</p>
+                <h1>Hi, I'm <span>SHIVAM</span><br>AGARWAL From India</h1>
+            </div>
+        </div>
+    </div>
+    <!---------------------About------------------- -->
+    <div id="about">
+        <div class="container">
+            <div class="row">
+                <div class="about-col-1">
+                    <img src="myself.jpg">
+                </div>
+                <div class="about-col-2">
+                    <h1 class="sub-title">About Me</h1>
+                    <p>I am the person who is always ready to face challenges, enthusiastic
+                        to get new tasks, eager to learn new things, always ready to enhance
+                        my skills and like to help people with my technical knowledge......
+                        never getting tired to write code....believe in hardwork. I always
+                        like to do work in team and always ready to communicate with others to
+                        get something new...live my life in present.....i always like to approach
+                        any kind of problem with smile which reduce it's difficulty level upto 50-60%.
+                        My only aim is to serve my society as an successful electrical and CS engineer
+                        and want to die with a satisfied life.</p>
+
+                    <div class="tab-titles">
+                        <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                        <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                        <p class="tab-links" onclick="opentab('education')">Education</p>
+                    </div>
+                    <div class="tab-contents active-tab" id="skills">
+                        <ul>
+                            <li><span>Web Developer</span><br>Designing Web interfaces</li>
+                            <li><span>App Developer</span><br>Designing App interfaces</li>
+                            <li><span>IOT specialist</span><br>Designing tools using Micro-processors</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="experience">
+                        <ul>
+                            <li><span>May 2023-Current</span><br>Web Developer and Designing Intern at OASIS
+                                INFOBYTE</li>
+                            <li><span>Sep 2022-Mar 2023</span><br>Intern as Campus Ambassador at IITB,
+                                Abhuday</li>
+                            <li><span>May 2022-Jun 2022</span><br>Summer Trainee at DEI </li>
+                            <li><span>Nov 2021-Present</span><br>Technical Team Member [GDSC(WOW)]
+                                at DEI</li>
+                            <li><span>Oct 2021-Present</span><br>Member of IEI-IEM Student's
+                                Chapter[EE]</li>
+                            <li><span>Feb 2017-Mar 2018</span><br>Complete Graduation[English Course]
+                                in FEA at the age of 14 only</li>
+                        </ul>
+                    </div>
+                    <div class="tab-contents" id="education">
+                        <ul>
+                            <li><span>2021-2025</span><br>B-TECH[EE(C.S spec.)] at
+                                DEI(Deemed to be University),Agra,U.P</li>
+                            <li><span>2021</span><br>12th PCM CBSE-91.6% from S.V.M,Agra</li>
+                            <li><span>2019</span><br>10th CBSE-94.8% from S.V.M,Agra</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ---------------------------services--------------------- -->
+    <div id="services">
+        <div class="container">
+            <h1 class="sub-title">My Services</h1>
+            <div class="services-list">
+                <div>
+                    <i class="fa-solid fa-file-code"></i>
+                    <h2>Web Design</h2>
+                    <p>I am very keen to design websites for my clients. I am trying
+                        to prepare my client's websites in minimum time possible
+                        efficiently and accurately.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-brands fa-app-store-ios"></i>
+                    <h2>App Design</h2>
+                    <p>I am very keen to design apps for my clients. I am trying
+                        to prepare my client's apps in minimum time possible
+                        efficiently and accurately.</p>
+                    <a href="#">Learn more</a>
+                </div>
+                <div>
+                    <i class="fa-sharp fa-solid fa-database"></i>
+                    <h2>Data Analyst</h2>
+                    <p>I am very keen to analyse the data for my clients. I am trying
+                        to prepare my client's data analysis reports in minimum time possible
+                        efficiently and accurately.</p>
+                    <a href="#">Learn more</a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- --------------------------portfolio------------------------ -->
+    <div id="portfolio">
+        <div class="container">
+            <h1 class="sub-title">My Work</h1>
+            <div class="work-list">
+                <div class="work">
+                    <img src="landingpage.jpg">
+                    <div class="layer">
+                        <h3>LANDING PAGE</h3>
+                        <p> This landing page I created for the company
+                            named as Shree Technology.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="temperatureconverter.jpg">
+                    <div class="layer">
+                        <h3>TEMPERATURE CONVERTER</h3>
+                        <p>This Temperature convert can covert the given
+                            temperature in three modes that are celcius,kelvin amd fahrenheit.</p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+                <div class="work">
+                    <img src="rotaryencoder.jpg">
+                    <div class="layer">
+                        <h3> ROTARY ENCODER</h3>
+                        <p>This is a IOT based project which I designed to help people to perform
+                            multiple tasks like their system's volume,brightness,restart,horizontal swipe
+                            system switch off,sleep mode and many more by just rotating one rotator.
+                        </p>
+                        <a href="#"><i class="fa-sharp fa-solid fa-arrow-up-right-from-square"></i></a>
+                    </div>
+                </div>
+            </div>
+            <a href="#" class="btn">See More</a>
+        </div>
+    </div>
+
+    <!-- ----------------------------------CONTACT---------------------------------------------- -->
+    <div id="contact">
+        <div class="containe">
+            <div class="row">
+                <div class="contact-left">
+                    <h1 class="sub-title">Contact Me</h1>
+                    <p><i class="fa-solid fa-paper-plane"></i>shivam17062003@gmail.com</p>
+                    <p><i class="fa-solid fa-paper-plane"></i>shivamagarwal2104119@dei.ac.in</p>
+                    <p><i class="fa-solid fa-phone"></i>+919084097762</p>
+                    <div class="social-icons">
+                        <a href="https://www.facebook.com/profile.php?id=100025143255323"><i class="fa-brands fa-square-facebook"></i></a>
+                        <a href="https://twitter.com/ShivamA62761892"><i class="fa-brands fa-twitter"></i></a>
+                        <a href="https://www.instagram.com/shivamagarwal202/"><i class="fa-brands fa-instagram"></i></a>
+                        <a href="https://www.linkedin.com/in/shivam-agarwal-175116221"><i class="fa-brands fa-linkedin"></i></a>
+                        <a href="http://github.com/shivamagarwal1"><i class="fa-brands fa-github"></i></a>
+                        <a href="https://youtube.com/@ThePhilosophicalEagle172"><i class="fa-brands fa-youtube"></i></a>
+                    </div>
+                    <a href="My CV.pdf" download class="btn btn2">Download CV</a>
+                </div>
+                <div class="contact-right">
+                    <form name="submit-to-google-sheet">
+                        <input type="text" name="Name" placeholder="Your Name" required>
+                        <input type="email" name="email" placeholder="Your Email" required>
+                        <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                        <button type="submit" class="btn btn2">Submit</button>
+
+                    </form>
+                    <span id="msg"></span>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>Copyright @ SHIVAM AGARWAL Made With <i class="fa-sharp fa-solid fa-heart"></i></p>
+        </div>
+    </div>
+    <script>
+
+        var tablinks = document.getElementsByClassName("tab-links");
+        var tabcontents = document.getElementsByClassName("tab-contents");
+
+        function opentab(tabname) {
+            for (tablink of tablinks) {
+                tablink.classList.remove("active-link");
+            }
+            for (tabcontent of tabcontents) {
+                tabcontent.classList.remove("active-tab");
+            }
+            event.currentTarget.classList.add("active-link");
+            document.getElementById(tabname).classList.add("active-tab");
+        }
+
+    </script>
+
+    <script>
+
+        var sidemenu = document.getElementById("sidemenu");
+        
+        function openmenu() {
+            sidemenu.style.right = "0";
+        }
+        function closemenu() {
+            sidemenu.style.right = "-200px";
+        }
+
+
+    </script>
+<script>
+    const scriptURL = 'https://script.google.com/macros/s/AKfycbxwyjFNRiXK28keXbXoWwagcqn3azkI6fn4XgtfCDjS9JdawCmjhaBQ6KTSmV3lXdE8/exec'
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Information Sent Successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+
+</body>
+
+</html>
